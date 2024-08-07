@@ -13,7 +13,7 @@ Folder frontend contains create react app code
 Folder backend contains node.js code
 
 ### Environment
-The application has been tested on node version v22.5.1 and npm version v10.8.2. It is recommanded that you run the code under these environment.
+The application has been tested on node version v22.5.1 and npm version v10.8.2. It is recommanded that you run the code under this environment.
 
 ### Prerequisites
 Kindly fulfill the prerequisites for <a href="https://github.com/tomlai19852004/to-do-app/blob/main/frontend/README.md">frontend</a> and <a href="https://github.com/tomlai19852004/to-do-app/blob/main/backend/README.md">backend</a> before running the application.
@@ -25,7 +25,7 @@ Below is the instruction to run the application locally.
 ```sh
 git clone https://github.com/tomlai19852004/to-do-app
 ```
-2. Install concurrently npm package to run both frontend and backend in a single command
+2. (Optional) Only if you want to run both frontend and backend in a single command. Install concurrently npm package. 
 ```sh
 npm install concurrently@8.2.2
 ```
