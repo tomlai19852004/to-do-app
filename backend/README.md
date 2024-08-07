@@ -36,3 +36,19 @@ create table duty (
 	modified_at timestamp without time zone default now()
 );
 ```
+
+## Available Scripts
+Install all dependencies.
+```sh
+npm install
+```
+
+Run the app in development mode. By default based endpoint is [http://localhost:4000]
+```sh
+npm start
+```
+
+Build the app for production to the `dist` folder.
+```sh
+npm run build
+```

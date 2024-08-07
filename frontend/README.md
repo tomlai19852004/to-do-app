@@ -9,7 +9,12 @@ Before running the code, you will need to create the following environment varia
 ```ini
 REACT_APP_API_BASE=http://localhost:3000/api
 ```
-By default create react app will be running on port 3000 and path /api is expected in order for proxy to work.
+By default create react app will be running on port 3000 and prefix of /api is expected in order for proxy to work.
+
+## Screenshots
+![Duty List screen](https://raw.githubusercontent.com/tomlai19852004/to-do-app/main/frontend/DutyList.png)
+
+![Duty Editor screen](https://raw.githubusercontent.com/tomlai19852004/to-do-app/main/frontend/DutyEditor.png)
 
 ## Available Scripts
 
