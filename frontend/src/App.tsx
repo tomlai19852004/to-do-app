@@ -2,7 +2,6 @@ import * as React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 import { Spin, ConfigProvider } from 'antd';
-import { ErrorBoundary } from 'react-error-boundary';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import styles from './theme'
 

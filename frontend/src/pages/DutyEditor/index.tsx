@@ -64,8 +64,6 @@ const DutyEditor: React.FC = () => {
     };
 
     useEffect(() => {
-        // console.log( createDuty.respMsg ); 
-        // console.log( updateDuty.respMsg );
         if( createDuty.respMsg.trim() || updateDuty.respMsg.trim() ){
             navigate('/');
         }
