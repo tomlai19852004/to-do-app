@@ -1,0 +1,11 @@
+{
+    "extends": "@tsconfig/node-lts/tsconfig.json",
+    "compilerOptions": {
+        "target": "es2016",
+        "strict": true,
+        "rootDir": "./src",
+        "outDir": "./dist",
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+}

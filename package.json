@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\" ",
+    "install": "concurrently \"npm run install:frontend\" \"npm run install:backend\"",
+    "start:frontend": "cd frontend && npm start",
+    "install:frontend": "cd frontend && npm install",
+    "start:backend": "cd backend && npm start",
+    "install:backend": "cd backend && npm install"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.6",
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
