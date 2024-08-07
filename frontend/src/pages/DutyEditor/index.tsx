@@ -14,6 +14,16 @@ import { Alert } from 'antd';
 const { TextArea } = Input;
 const { Title } = Typography;
 
+
+/**
+ * Represents a DutyEditor page component. 
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @returns {React.ReactElement} A DutyEditor page element.
+ */
+
+
 type FieldType = {
     duty?: string;
 };
@@ -71,10 +81,10 @@ const DutyEditor: React.FC = () => {
             <Form
                 form={form}
                 name='duty-editor'
-                labelCol={{ span: 8 }}
-                wrapperCol={{ span: 16 }}
-                style={{ maxWidth: 600 }}
-                initialValues={{ remember: true, layout: 'vertical' }}
+                // labelCol={{ span: 8 }}
+                // wrapperCol={{ span: 16 }}
+                style={{ maxWidth: '100%' }}
+                initialValues={{ remember: true, layout: 'horizontal' }}
                 onFinish={onFinish}
                 onFinishFailed={onFinishFailed}
                 autoComplete="off"
@@ -84,10 +94,10 @@ const DutyEditor: React.FC = () => {
                         name='duty'
                         rules={[{ required: true, message: 'Please input duty detail!' }]}
                         >
-                            <TextArea />
+                            <TextArea rows={8} />
                         </Form.Item>
 
-                    <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+                    <Form.Item>
                         <Button type="primary" htmlType="submit">
                             Submit
                         </Button>

@@ -12,14 +12,7 @@ export default (
     res: any,
     { data = {}, status = 200, contentType = "application/json" }
 ) => {
-    // CORS headers
-    const cors_headers = {
-        // 'Access-Control-Allow-Origin': '*',
-        // 'Access-Control-Allow-Methods': 'OPTIONS, POST, GET',
-        // 'Access-Control-Max-Age': 2592000
-    }
-
-    res.writeHead(status, { "Content-Type": contentType, ...cors_headers });
+    res.writeHead(status, { "Content-Type": contentType });
     res.write(JSON.stringify(data));
     res.end();
 };

@@ -10,13 +10,19 @@ import { Alert } from 'antd';
 
 const { Title } = Typography;
 
+/**
+ * Represents a DutyList page component. 
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @returns {React.ReactElement} A DutyList page element.
+ */
+
+
 const DutyList: React.FC = () => {
     const duties = useGetDuties();
     const { error, deleteDuty } = useDeleteDuty();
     const navigate = useNavigate();
-    
-
-    // console.log( duties.error );
     
     const goToEditor = ( id?: string ) => {
         navigate(`/Editor/${id ? id : ''}`);

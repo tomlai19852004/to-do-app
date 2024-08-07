@@ -3,6 +3,9 @@ import { api } from 'commons/Api';
 import { Duty } from 'commons/Types';
 import { FormInstance } from 'antd';
 
+/**
+ * Represents a custom hook to get a single duty from API. 
+ */
 export const useGetDuty = (id: string, formInstance: FormInstance) => {
     const [ data, setData ] = useState<Duty>({ id: '', name:'', deleted: false, created_at: 0, modified_at: 0 });
     const [ error, setError ] = useState<any>(null);

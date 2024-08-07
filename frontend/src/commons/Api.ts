@@ -1,7 +1,7 @@
 import Axios, { InternalAxiosRequestConfig } from 'axios';
 
 const reqInterceptor = (config: InternalAxiosRequestConfig) => {
-    console.log( config.headers );
+    // console.log( config.headers );
     if( config.headers ){
         config.headers.Accept = 'application/json';
     }

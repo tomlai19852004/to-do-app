@@ -6,6 +6,12 @@ import { default as deleteDuty } from './deleteDuty';
 import { parseBodyMiddleware, parseParamsMiddleware } from '../../middlewares';
 import { response } from '../../utils';
 
+/**
+ * Determine the incoming request method and route to corresponding functions.
+ *
+ * @param {import('http').ServerRequest} req - The server request object.
+ * @param {import('http').ServerResponse} res - The server response object.
+ */
 export default (req: any, res: any) => {
     const parsedUrl = url.parse( req.url, true );
     const path = parsedUrl.pathname as string;
@@ -23,14 +29,10 @@ export default (req: any, res: any) => {
             break;
         case 'PUT':
             parseParamsMiddleware('/api/duty/:id', req, res, [parseBodyMiddleware, updateDuty]);
-            // parseBodyMiddleware(req, res, [updateDuty]);
             break;
         case 'DELETE':
-            // parseBodyMiddleware(req, res, del);
             parseParamsMiddleware('/api/duty/:id', req, res, [deleteDuty]);
             break;
-        // case 'OPTIONS':
-        //     response( res, { status: 200, data: {} });
         default:
             response(res, { status: 404, data: { error: "Resource not found" }});
             break;

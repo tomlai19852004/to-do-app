@@ -2,6 +2,10 @@ import { useState } from 'react';
 import { api } from 'commons/Api';
 import { ActionResponse, DutyPayload } from 'commons/Types';
 
+
+/**
+ * Represents a custom hook to send create duty request. 
+ */
 export const useCreateDuty = () => {
     const [ respMsg, setRespMsg ] = useState('');
     const [ error, setError ] = useState<any>(null);

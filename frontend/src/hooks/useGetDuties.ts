@@ -3,6 +3,10 @@ import { api } from 'commons/Api';
 import { Duty } from 'commons/Types';
 
 
+/**
+ * Represents a custom hook to get list of duties from API. 
+ */
+
 export const useGetDuties = () => {
     const [ data, setData ] = useState<Duty[] | never[]>([]);
     const [ error, setError ] = useState<any>(null);
