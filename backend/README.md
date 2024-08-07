@@ -19,11 +19,11 @@ PGPASSWORD=
 PGUSER=
 ```
 
-PGHOST - Host of PostgreSQL
-PGPORT - Database port
-PGDATABASE - Database name
-PGPASSWORD - Database password
-PGUSER - Database username
+PGHOST - Host of PostgreSQL<br />
+PGPORT - Database port<br />
+PGDATABASE - Database name<br />
+PGPASSWORD - Database password<br />
+PGUSER - Database username<br />
 
 Backend is connected to PostgreSQL. You will need to create the following database table before running the backend.
 
