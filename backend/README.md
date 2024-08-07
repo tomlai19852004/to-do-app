@@ -24,3 +24,15 @@ PGPORT - Database port
 PGDATABASE - Database name
 PGPASSWORD - Database password
 PGUSER - Database username
+
+Backend is connected to PostgreSQL. You will need to create the following database table before running the backend.
+
+```sql
+create table duty (
+	id UUID NOT NULL DEFAULT uuid_generate_v1(),
+	name text,
+	deleted boolean default false,
+	created_at timestamp without time zone default now(),
+	modified_at timestamp without time zone default now()
+);
+```
